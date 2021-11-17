@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/calc.css" />
+    <link rel="stylesheet" href="/main.css" />
     <title>Calculator</title>
   </head>
   <body>
@@ -12,8 +12,8 @@
       <div class="calc">
         <div class="calc-display"></div>
         <div class="calc-btns">
-          <button>AС</button>
-          <button class="span-btn">DEL</button>
+          <button onclick="reset()">AС</button>
+          <button class="span-btn" onclick="back()">DEL</button>
           <button onclick="insert('/')">/</button>
           <button onclick="insert('7')">7</button>
           <button onclick="insert('8')">8</button>
@@ -29,7 +29,7 @@
           <button onclick="insert('+')">+</button>
           <button onclick="insert('0')">0</button>
           <button onclick="insert('.')">.</button>
-          <button class="span-btn" onclick="insert('=')">=</button>
+          <button class="span-btn" onclick="showResult()">=</button>
         </div>
       </div>
     </div>

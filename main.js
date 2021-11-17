@@ -20,3 +20,14 @@ function isNotDuplicable(sign) {
     sign == "+" || sign == "-" || sign == "*" || sign == "/" || sign == "."
   );
 }
+function back() {
+  let oldData = display.innerText;
+  display.innerText = oldData.substring(0, oldData.length - 1);
+}
+function reset() {
+  display.innerText = "";
+}
+function showResult() {
+  let result = eval(display.innerText);
+  display.innerText = result;
+}
