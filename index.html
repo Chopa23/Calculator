@@ -10,26 +10,31 @@
   <body>
     <div class="wrapper">
       <div class="calc">
-        <div class="calc-display"></div>
+        <div data-display class="calc-display">
+          <div data-previous-operand class="previous-operand"></div>
+
+          <div data-current-operand class="current-operand"></div>
+        </div>
         <div class="calc-btns">
-          <button onclick="reset()">AС</button>
-          <button class="span-btn" onclick="back()">DEL</button>
-          <button onclick="insert('/')">/</button>
-          <button onclick="insert('7')">7</button>
-          <button onclick="insert('8')">8</button>
-          <button onclick="insert('9')">9</button>
-          <button onclick="insert('*')">*</button>
-          <button onclick="insert('4')">4</button>
-          <button onclick="insert('5')">5</button>
-          <button onclick="insert('6')">6</button>
-          <button onclick="insert('-')">-</button>
-          <button onclick="insert('1')">1</button>
-          <button onclick="insert('2')">2</button>
-          <button onclick="insert('3')">3</button>
-          <button onclick="insert('+')">+</button>
-          <button onclick="insert('0')">0</button>
-          <button onclick="insert('.')">.</button>
-          <button class="span-btn" onclick="showResult()">=</button>
+          <button data-all-clear>AС</button>
+
+          <button data-delete class="span-btn">DEL</button>
+          <button data-operation>/</button>
+          <button data-number>7</button>
+          <button data-number>8</button>
+          <button data-number>9</button>
+          <button data-operation>*</button>
+          <button data-number>4</button>
+          <button data-number>5</button>
+          <button data-number>6</button>
+          <button data-operation>-</button>
+          <button data-number>1</button>
+          <button data-number>2</button>
+          <button data-number>3</button>
+          <button data-operation>+</button>
+          <button data-number>0</button>
+          <button data-number>.</button>
+          <button data-equals class="span-btn">=</button>
         </div>
       </div>
     </div>
